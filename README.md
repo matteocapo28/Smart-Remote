@@ -5,6 +5,7 @@ ESP32 based universal IR Remote
 Current Progress:
 - LG NEC IR control
 - Roku IR control
+- Basic Screen control
 
 Goals:
 - Control any IR TV
