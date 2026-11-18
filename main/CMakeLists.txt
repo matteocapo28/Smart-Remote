@@ -1,3 +1,2 @@
-idf_component_register(SRCS "main.c" "lvgl_demo_ui.c"
-                       REQUIRES esp_driver_gpio
+idf_component_register(SRCS "main.c"
                        INCLUDE_DIRS ".")
