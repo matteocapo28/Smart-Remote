@@ -6,7 +6,6 @@
 
 #define IR_NEC_DECODE_MARGIN 200     // Tolerance for parsing RMT symbols into bit stream
 
+void ir_init(void);
 void ir_send();
 void ir_receive();
-
-void func(void);

@@ -125,7 +125,7 @@ static bool example_rmt_rx_done_callback(rmt_channel_handle_t channel, const rmt
 }
 
 
-void func(void)
+void ir_init(void)
 {
     ESP_LOGI(TAG, "create RMT RX channel");
     rmt_rx_channel_config_t rx_channel_cfg = {

@@ -1,19 +1,16 @@
-// #include "freertos/FreeRTOS.h"
-// #include "freertos/task.h"
-// #include "freertos/queue.h"
-// #include "esp_log.h"
-// #include "driver/gpio.h"
 
-#include "input/include/"
+#include "input.h"
+
 
 static const char *TAG = "main";
-
 
 
 void app_main(void) {
     input_init();
 
     while(1) {
+        printf("Main Running\n\r");
 
+        vTaskDelay(100 / portTICK_PERIOD_MS);
     }
 }

@@ -1,1 +1,3 @@
-void func(void);
+
+
+void app_init(void);

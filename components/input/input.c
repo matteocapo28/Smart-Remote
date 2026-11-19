@@ -1,5 +1,8 @@
-#include <stdio.h>
+
 #include "input.h"
+
+#include "driver/gpio.h"
+
 
 #define GPIO_INPUT_BUTTON_0 1
 #define GPIO_INPUT_BUTTON_1 2
@@ -18,7 +21,7 @@ static void IRAM_ATTR gpio_isr_handler(void* arg) {
 
 static void gpio_task(void* arg) {
     uint32_t io_num;
-    
+
     for (;;) {
         if (xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
             printf("GPIO[%"PRIu32"] intr, val: %d\n", io_num, gpio_get_level(io_num));
